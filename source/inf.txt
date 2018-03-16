@@ -1,0 +1,5 @@
+Run
+
+find /temp/ -depth -name "* *" -exec rename 's/ +\././; y/A-Z /a-z_/' {} +
+
+to rename all folders into lowercase and remove spaces for _

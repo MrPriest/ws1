@@ -1,0 +1,138 @@
+body {
+  background-color: #222;
+}
+
+p {
+  color: #f2f2f2;
+}
+
+footer {
+    background-color: #343434;
+    overflow: hidden;
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* SQUARES CONTAINERS */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  /* .cell {
+    width: 50%;
+  } */
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+} */
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 5);
+  }
+}
+
+.cell {
+  margin: 1rem;
+}
+
+/* @media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
+} */
+
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+} */
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(20% - 2rem);
+  }
+}
+
+.preview:hover{
+  color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+}
+
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+/* TOP NAV BAR */
+
+.topnav {
+    background-color: #343434;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #ddd;
+    color: black;
+}
