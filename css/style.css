@@ -1,9 +1,12 @@
 body {
   background-color: #222;
+  font-family: 'Lato', sans-serif;
 }
 
 p {
   color: #f2f2f2;
+  margin-right: 150px;
+  margin-left: 80px;
 }
 
 footer {
@@ -111,7 +114,18 @@ img.grayscale:hover {
   -webkit-filter: grayscale(0%);
 }
 
+/* img.invert:hover { */
+    /* -webkit-filter: invert(100%); /* Safari */
+    /* filter: invert(100%); */
+/* } */
+
 /* TOP NAV BAR */
+
+#logo {
+  float: right;
+  padding: 4px 16px;
+  width: 48px;
+}
 
 .topnav {
     background-color: #343434;
@@ -124,7 +138,7 @@ img.grayscale:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .topnav a:hover {

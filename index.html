@@ -8,6 +8,7 @@
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- My style -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
   </head>
@@ -15,11 +16,11 @@
   <body>
     <!-- top navigation bar -->
     <div class="topnav">
-      <a class="active" href="index.html">Home</a> <!-- Substitute with MN logo -->
+      <a class="active" href="index.html">Home</a>
       <a href="html/chi-siamo.html">Chi Siamo</a>
       <a href="html/contatti.html">Contatti</a>
       <a href="html/referenze.html">Referenze</a>
-      <!-- <img src="img/"> -->
+      <img src="img/MNLogo.png" id="logo">
     </div>
 
     <!-- squares conetainers -->
@@ -28,7 +29,7 @@
 
         <!--  Aeroporto di Magadino prefabbricato uffici-->
         <div class="cell">
-          <img src="img/aeroporto_di_magadino_prefabbricato_uffici/magadino-title.png" class="responsive-image">
+          <img src="img/aeroporto_di_magadino_prefabbricato_uffici/ph.png" class="responsive-image"> <!--invert">-->
         </div>
         <div class="cell preview">
           <img src="img/aeroporto_di_magadino_prefabbricato_uffici/IMG_0294.jpg" class="responsive-image grayscale">
@@ -266,7 +267,7 @@
 
         <!-- Capannone Industriale Amministrativo Agno -->
         <div class="cell">
-          <img src="img/capannone_industriale_amministrativo_agno/agno-title.png" class="responsive-image">
+          <img src="img/capannone_industriale_amministrativo_agno/ph.png" class="responsive-image">
         </div>
         <div class="cell preview">
           <img src="img/capannone_industriale_amministrativo_agno/IMG_327.jpg" class="responsive-image grayscale">
@@ -332,23 +333,6 @@
           <img src="img/stabile_amministatrivo_stabio/4.jpg" class="responsive-image grayscale">
         </div>
 
-        <!-- Centro Sportivo Universitario -->
-        <div class="cell">
-          <img src="img/centro_sportivo_universitario/ph.png" class="responsive-image">
-        </div>
-        <div class="cell preview">
-          <img src="img/centro_sportivo_universitario/1.jpg" class="responsive-image grayscale">
-        </div>
-        <div class="cell preview">
-          <img src="img/centro_sportivo_universitario/2.jpg" class="responsive-image grayscale">
-        </div>
-        <div class="cell preview">
-          <img src="img/centro_sportivo_universitario/3.jpg" class="responsive-image grayscale">
-        </div>
-        <div class="cell preview">
-          <img src="img/centro_sportivo_universitario/4.jpg" class="responsive-image grayscale">
-        </div>
-
         <!-- Complesso residenziale Mezzovico -->
         <div class="cell">
           <img src="img/complesso_residenziale_mezzovico/ph.png" class="responsive-image">
@@ -402,7 +386,7 @@
 
         <!-- Caprile in Legno Lamellare Tremona -->
         <div class="cell">
-          <img src="img/caprile_in_legno_lamellare_tremona/caprile-title.png" class="responsive-image">
+          <img src="img/caprile_in_legno_lamellare_tremona/ph.png" class="responsive-image">
         </div>
         <div class="cell preview">
           <img src="img/caprile_in_legno_lamellare_tremona/IMG_086.jpg" class="responsive-image grayscale">
@@ -434,8 +418,25 @@
           <img src="img/carrozzeria_castel_san_pietro/4.jpg" class="responsive-image grayscale">
         </div>
 
-        <!-- Casa privata prefabbricata in legno Ginevra -->
+        <!-- Centro Sportivo Universitario -->
         <div class="cell">
+          <img src="img/centro_sportivo_universitario/ph.png" class="responsive-image">
+        </div>
+        <div class="cell preview">
+          <img src="img/centro_sportivo_universitario/1.jpg" class="responsive-image grayscale">
+        </div>
+        <div class="cell preview">
+          <img src="img/centro_sportivo_universitario/2.jpg" class="responsive-image grayscale">
+        </div>
+        <div class="cell preview">
+          <img src="img/centro_sportivo_universitario/3.jpg" class="responsive-image grayscale">
+        </div>
+        <div class="cell preview">
+          <img src="img/centro_sportivo_universitario/4.jpg" class="responsive-image grayscale">
+        </div>
+
+        <!-- Casa privata prefabbricata in legno Ginevra -->
+        <!-- <div class="cell">
           <img src="img/casa_privata_prefabbricata_in_legno_ginevra/ph.png" class="responsive-image">
         </div>
         <div class="cell preview">
@@ -449,7 +450,7 @@
         </div>
         <div class="cell preview">
           <img src="img/casa_privata_prefabbricata_in_legno_ginevra/4.jpg" class="responsive-image grayscale">
-        </div>
+        </div> -->
 
         <!-- Ampliamento Capannone Cadenazzo -->
         <!-- <div class="cell">
@@ -468,9 +469,8 @@
           <img src="img/ampliamento_capannone_cadenazzo/IMG_2341.jpg" class="responsive-image grayscale">
         </div> -->
 
-
         <!-- Casa privata Elgg -->
-        <div class="cell">
+        <!-- <div class="cell">
           <img src="img/casa_privata_elgg/ph.png" class="responsive-image">
         </div>
         <div class="cell preview">
@@ -484,7 +484,7 @@
         </div>
         <div class="cell preview">
           <img src="img/casa_privata_elgg/4.jpg" class="responsive-image grayscale">
-        </div>
+        </div> -->
 
         <!-- Edificio amministrativo Ligornetto -->
         <!-- <div class="cell">
@@ -602,6 +602,11 @@
   </body>
 
   <!-- My Scripts -->
-  <!-- <script src="js/parallax.js"></script> -->
+  <!-- <script>
+    $('img').click(function() {
+      var i = Array.from(element.parentNode.children).indexOf(element);
+      alert(i);
+    });
+  </script> -->
 
 </html>
