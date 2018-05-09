@@ -28,7 +28,7 @@
     <div id="loader"></div>
 
     <!-- squares conetainers -->
-    <div class="container animate-bottom" style="display:none;" id="myDiv">
+    <div class="container animate-bottom myDiv" style="display:none;">
       <div class="grid">
 
         <!--  Aeroporto di Magadino prefabbricato uffici-->
@@ -599,7 +599,7 @@
       </div>
     </div>
 
-    <footer class="animate-bottom" style="display:none;" id="myDiv">
+    <footer class="animate-bottom myDiv" style="display:none;" onload="myFunction()" id="myDiv">
       &#9400; Thomas Del Prete 2018
     </footer>
 
@@ -615,7 +615,8 @@
 
   function showPage() {
     document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
+    document.getElementsByClassName("myDiv")[0].style.display = "block";
+    document.getElementsByClassName("myDiv")[1].style.display = "block";
   }
 
 //   $(document).ready(function(){
