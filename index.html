@@ -14,8 +14,6 @@
   </head>
 
   <body onload="myFunction()" style="margin:0;">
-    <!-- page loader -->
-    <div id="loader"></div>
 
     <!-- top navigation bar -->
     <div class="topnav">
@@ -25,6 +23,9 @@
       <a href="html/referenze.html">Referenze</a>
       <img src="img/MNLogo.png" id="logo">
     </div>
+
+    <!-- page loader -->
+    <div id="loader"></div>
 
     <!-- squares conetainers -->
     <div class="container animate-bottom" style="display:none;" id="myDiv">
@@ -616,6 +617,10 @@
     document.getElementById("loader").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
   }
+
+//   $(document).ready(function(){
+//      myFunction();
+//   });
   </script>
 
 </html>
