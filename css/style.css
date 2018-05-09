@@ -123,8 +123,10 @@ img.grayscale:hover {
 
 #logo {
   float: right;
+  /* padding: 4px 16px;
+  width: 48px; */
   padding: 4px 16px;
-  width: 48px;
+  width: 310px;
 }
 
 .topnav {
